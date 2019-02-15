@@ -1,0 +1,42 @@
+4:Manually solving.
+
+a: (5+3)
+=>It is balanced.
+postfixequation=> 53+
+Result: 8
+
+
+b: (5+3)*8+(2)
+=> It is balanced.
+postfixequation=> 53+8*2+
+Result: 66
+
+ 
+c: (5+3)*((2+4)*3))
+=> This expression is not balanced.
+
+ 
+ 
+d: (((4)))
+Balanced
+postfixequation =>4
+Result: 4
+
+
+e: (1/2)*(2+3)/2
+Balanced
+postfixequation=>12/23+*2/
+Result:1.25
+
+f: (2+3)*(8*9)/2)
+It is not Balanced.
+
+
+g: ((2+3)*((8*9)/2)
+It is not balanced.
+
+
+h: (2+3)*((8*9)/2)
+Balanced
+postfixequation=>23+89*2/*
+result:180
