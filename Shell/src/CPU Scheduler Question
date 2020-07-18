@@ -1,0 +1,53 @@
+Your assignment is to simulate two scheduling algorithms run on CPUs. Your simulator should select a process to run from the ready queue based on the scheduling algorithm chosen at runtime. Since the assignment intends to simulate a CPU scheduler, it does not require any actual process creation or execution, but only simulated events of process arrival and execution. When an event occurs in your simulator, it will simply print out the nature of the event and the process that was involved in that event.
+
+Design Details:
+
+1. Write a class called Process which stores the ID, arrival time, and CPU burst length of a process, all are integers. Please note:
+
+  a. Process IDs should be unique.
+
+  b. Arrival times and CPU bursts don’t have to be unique.
+
+  c. You can also add any properties (variables) to a process that will help you compute the statistics about that process such as its wait time, response time, and turnaround time.
+
+  d. The methods of the Process class are the get and set methods for each data member, the constructor for the class, and any method needed to compute the statistics (times) for that process.
+
+2. Write a class called Scheduler to simulate a CPU scheduler for an operating system. Note that your method of adding and removing processes to that queue will depend on the scheduling policy implemented. You’ll implement First Come First Serve and Shortest Remaining Job First which is the preemptive version of Shortest Job First.
+
+3. Create a driver class that will start the simulation, read in the input about the processes, and print results to the console.
+
+  a. The input to your program should be the processes and the algorithm selection.
+
+  b. Your input/output should look like this
+
+OS CPU SCHEDULING SIMULATOR
+
+input: 
+ENTER PROCESS ID (-1 to END):  1
+ENTER PROCESS ARRIVAL TIME: 3
+ENTER PROCESS BURST TIME: 5
+ENTER PROCESS ID (-1 to END):  2
+ENTER PROCESS ARRIVAL TIME: 4
+ENTER PROCESS BURST TIME: 2
+ENTER PROCESS ID (-1 to END):  3
+ENTER PROCESS ARRIVAL TIME: 6
+ENTER PROCESS BURST TIME: 1
+ENTER PROCESS ID (-1 to END):  -1
+
+SELECT ALGORITHM: 1- FCFS, 2 - SRJF: 2
+
+Output
+
+TIME - PROCESS
+0 - 0
+1 - 0
+2 - 0
+3 - 1
+4 - 2
+5 - 2
+6 - 3
+7 - 1
+8 - 1
+9 - 1
+10 - 1
+11 - 0
